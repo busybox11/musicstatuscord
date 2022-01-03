@@ -1,0 +1,24 @@
+{
+  "name": "musicstatuscord",
+  "version": "1.0.0",
+  "description": "A very bad name for something that only updates your Discord status with music lyrics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/busybox11/musicstatuscord.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/busybox11/musicstatuscord/issues"
+  },
+  "homepage": "https://github.com/busybox11/musicstatuscord#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "websocket": "^1.0.34"
+  }
+}
