@@ -23,10 +23,14 @@ client.on('connect', function(connection) {
 
     connection.on('message', async function(message) {
         if (message.type === 'utf8') {
-            let data = JSON.parse(message.utf8Data)
+        	try {
+	        	let data = JSON.parse(message.utf8Data)
 
-            let line = await songData.getLineFromSongID(data['id'])
-			await sendStatusUpdate(line)
+	            let line = await songData.getLineFromSongID(data['id'])
+				await sendStatusUpdate(line)
+        	} catch (e) {
+        		console.error(e)
+        	}
         }
     })
 })
